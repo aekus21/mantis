@@ -1,9 +1,9 @@
 from sys import maxsize
 
 class Project:
-    def __init__(self, project_name = None, id = None):
+    def __init__(self, project_name = None, project_description=None, id = None):
         self.project_name = project_name
-        # self.project_description = project_description
+        self.project_description = project_description
         self.id = id
 
     def __repr__(self):
