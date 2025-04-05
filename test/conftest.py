@@ -27,7 +27,7 @@ def config(request):
 def app(request, config):
     global fixture
     browser = request.config.getoption('--browser')
-    web = config['web']
+    #web = config['web']
     web_config = config['webadmin']
     if fixture is None or not fixture.is_valid():
         fixture = Application(browser = browser, config = config)
