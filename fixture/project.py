@@ -47,4 +47,4 @@ class ProjectHelper:
 
     def get_project_id(self, id):
         wd = self.app.wd
-        wd.get('http://localhost/mantisbt-1.2.20/manage_proj_edit_page.php?project_id=' + id)
+        wd.get('http://localhost/mantisbt-1.2.20/manage_proj_edit_page.php?project_id=' + str(id))
